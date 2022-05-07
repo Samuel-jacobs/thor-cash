@@ -11,13 +11,99 @@ img {
 	height: auto;
 	width: 100%;
 }
+a:hover {
+	text-decoration: none;
+}
+.navbar {
+	background-color: #0606fa;
+}
+.bg.scrolled {
+	background-color: navy;
+	transition: background-color 200ms linear;
+}
+
+.navbar-toggler {
+	background: linear-gradient(to right, #0606fa, navy) ;
+	border: none;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding:  10px 15px;
+}
+.fa-bars {
+	color: white;
+	font-size: 0.9rem;
+}
+.navbar-nav a{
+	color: white;
+}
+.navbar-nav .nav-item a:hover {
+	color: #00ffff;
+	text-decoration: none;
+}
+.navbar-btn {
+	background-image: linear-gradient(to right, rgb(213, 136, 213) 0%, #7e18dc  100%);
+	border-radius: 10px;
+  box-sizing: border-box;
+	display: block;
+	padding: 2px;
+	position: relative;
+  text-decoration: none;
+	width: 150px;
+	z-index: 2;
+	margin: 10px 0;
+}
+
+.navbar-btn:hover {
+	color: #fff;
+	text-decoration: none;
+}
+
+.navbar-btn span {
+	align-items: center;
+	background: navy;
+	border-radius: 10px;
+	display: flex;
+	justify-content: center;
+	height: 100%;
+	transition: background .5s ease;
+	width: 100%;
+	padding: 5px 10px;
+}
+
+.navbar-btn:hover span {
+	background: transparent;
+}
+
 #welcome {
 	margin-top: 70px;
+	background:linear-gradient( #0606fa, navy) ;
 }
 .welcome-text {
 	text-align: center;
 	
 }
+
+.welcome-link .fas {
+	color: white;
+	background-color: #00ffff;
+	padding: 10px;
+	border-radius: 50%;
+}
+.welcome-link-wrapper a span{
+	color: #00ffff;
+	padding-left: 10px;
+}
+.welcome-link-wrapper a:hover .fas{
+	background-color:#7e18dc;
+}
+.welcome-link-wrapper a:hover span {
+	color: #7e18dc;
+}
+.welcome-link-wrapper a:hover {
+	text-decoration: none;
+}
+
 .presale {
 	background-color: blue;
 	margin: 30px;
@@ -29,7 +115,7 @@ img {
 	font-size: 2.5rem;
 }
 .presale .btn {
-	background: linear-gradient(to right, rgb(213, 136, 213), purple) ;
+	background: linear-gradient(to right, #d588d5 0%, #7e18dc  100%) ;
 	border: none;
 	margin-bottom: -60px;
 	color: white;
@@ -79,6 +165,25 @@ img {
 .why-links {
 	text-align: center;
 	padding-top: 30px;
+}
+.why-links a {
+	color: white;
+}
+.why-links a.why-link1 {
+	color: #00ffff;
+	padding-right: 20px;
+}
+.why-links a.why-link1:hover {
+	color: #7e18dc;
+}
+
+.whitepaper-btn {
+	display: inline-block;
+	width: 200px;
+}
+.whitepaper-btn span {
+	padding: 0;
+
 }
 
 #benefits {
@@ -140,24 +245,47 @@ tr :nth-child(2) {
 
 
 @media screen and (max-width: 768px) {
+	.navbar-nav {
+		padding-left: 30px;
+	}
+	.navbar-nav .nav-item a{
+		color: white;
+	}
+	.navbar-nav .nav-item a:hover {
+		color: #00ffff;
+	}
 	#welcome {
 		padding: 10px;
 	}
 	#section3 {
 		padding: 50px 20px;
 	}
+	#section3 .wrapper1 {
+		padding-bottom: 50px;
+	}
+	#section3 .wrapper2 {
+		padding-top: 50px;
+	}
+	#section3 .wrapper .section3-text {
+		padding-top: 50px;
+	}
+	
 	.benefit-item {
 		text-align: center;
 		padding: 30px;
 	}
 	.benefit-item img {
-		height: 150px;
+		height: 100px;
 		width: 150px;
 		
 	}
 }
 
 @media screen and (min-width: 768px) {
+	.navbar-btn {
+		display: inline-block;
+		margin: 0 10px;
+	}
 	#welcome {
 		display: flex;
 		padding-top: 50px;
