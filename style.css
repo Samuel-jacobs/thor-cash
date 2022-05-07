@@ -35,17 +35,125 @@ img {
 	color: white;
 	opacity: 1;
 }
-
+.description  {
+	font-weight: bolder;
+	font-size: 2rem;
+	padding: 10px 0;
+}
 #about {
 	padding: 50px 20px;
+	background:linear-gradient( #0606fa, navy) ;
 }
 .about-text {
 	padding-top: 30px;
 }
 
+#section3 {
+	background: #0606fa;
+}
+
+#why {
+	padding: 50px 20px;
+}
+.why-card {
+	background-color: #0606fa;
+	margin: 20px 0;
+	text-align: center;
+	padding: 20px;
+	border-radius: 5px;
+}
+.why-card img {
+	padding: 20px;
+	width: 200px;
+	height: 150px;
+}
+.why-card hr{
+	background-color: #00ffff;
+	width: 70px;
+	height: 3px;
+
+}
+.why-card h6 {
+	color: #00ffff;
+}
+.why-links {
+	text-align: center;
+	padding-top: 30px;
+}
+
+#benefits {
+	background-color: #0606fa;
+	padding: 50px 20px;
+}
+
+#token-sale {
+	background-color: #0606fa;
+	padding: 50px 20px;
+}
+
+.token-table {
+  overflow: auto;
+ 
+ 
+}
+.table {
+	color: white;
+}
+table {
+	color: white;
+  border-radius: 6px;
+}
+
+.table-color{
+	background-color: #1212b7;
+}
+.table-color2 {
+	background-color: #0606e4;
+}
+.table-color3 {
+	background-color: #2626dd;
+}
+tr :nth-child(2) {
+	color: aqua;
+}
+
+#roadmap {
+	padding: 50px 20px;
+}
+
+#advisors {
+	background-color: #0606fa;
+	padding: 50px 20px;
+}
+.advisor-item {
+	background-color: navy;
+	text-align: center;
+	padding: 10px;
+	margin: 20px 50px;
+	border-radius: 5px;
+}
+
+#footer {
+	padding: 100px;
+	text-align: center;
+}
+
+
 @media screen and (max-width: 768px) {
 	#welcome {
 		padding: 10px;
+	}
+	#section3 {
+		padding: 50px 20px;
+	}
+	.benefit-item {
+		text-align: center;
+		padding: 30px;
+	}
+	.benefit-item img {
+		height: 150px;
+		width: 150px;
+		
 	}
 }
 
@@ -54,6 +162,7 @@ img {
 		display: flex;
 		padding-top: 50px;
 		padding-left: 150px;
+		padding-bottom: 100px;
 		flex-direction: row-reverse;
 		
 	}
@@ -74,10 +183,76 @@ img {
 	
 	.about-text {
 		align-self: center;
-		max-width: 35vw;;
+		max-width: 35vw;
 	}
-	.about-text h4 {
+	.description  {
 		font-weight: bolder;
 		font-size: 2rem;
+		padding: 10px 0;
 	}
+
+	#section3 {
+		padding: 100px;
+	}
+	#section3 .wrapper {
+		display: flex;
+		
+	}
+	#section3 .wrapper1 {
+		flex-direction: row-reverse;
+		padding-bottom: 100px;
+	}
+	.section3-text {
+		align-self: center;
+		max-width: 40vw;
+	}
+
+	#why {
+		padding: 100px;
+	}
+	.why-card {
+		margin: 0 5px;
+	}
+
+	#benefits {
+		padding: 100px;
+	}
+	.benefit-intro {
+		max-width: 40vw;
+	}
+	.benefit-wrapper {
+		padding: 50px 0;
+	}
+	.benefit-item {
+		display: flex;
+		padding: 30px;
+	}
+	.benefit-item p {
+		align-self: center;
+	}
+
+	#token-sale {
+		display: flex;
+		padding: 100px;
+	}
+	.intro {
+		max-width: 40vw;
+	}
+	.token-table {
+		width: 60vw;
+	}
+
+	#advisors {
+		padding: 100px;
+	}
+	.advisors-wrapper {
+		display: flex;
+		justify-content: center;
+		padding-top: 50px;
+	}
+	.advisor-item {
+		margin: 0 10px;
+		width: 250px;
+	}
+
 }
