@@ -79,9 +79,17 @@ a:hover {
 	margin-top: 70px;
 	background:linear-gradient( #0606fa, navy) ;
 }
+
+.welcome-img {
+	animation: welcome-load 1000ms ease-in;
+	transform: translateY(0);
+	animation-fill-mode: forwards;
+}
 .welcome-text {
 	text-align: center;
-	
+	animation: welcome-load-text 1000ms ease-in;
+	transform: translateY(0);
+	animation-fill-mode: forwards;
 }
 
 .welcome-link .fas {
@@ -255,7 +263,7 @@ tr :nth-child(2) {
 		color: #00ffff;
 	}
 	#welcome {
-		padding: 10px;
+		padding: 10px 10px 50px 10px;
 	}
 	#section3 {
 		padding: 50px 20px;
@@ -383,4 +391,25 @@ tr :nth-child(2) {
 		width: 250px;
 	}
 
+}
+
+@keyframes welcome-load {
+	0% {
+		transform: translateY(-50%);
+		
+	}
+	100% {
+		transform: translateY(0);
+		
+	}
+}
+@keyframes welcome-load-text{
+	0% {
+		transform: translateY(50%);
+		
+	}
+	100% {
+		transform: translateY(0);
+		
+	}
 }
